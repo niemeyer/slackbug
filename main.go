@@ -14,7 +14,6 @@ import (
 const header = `
 PASS {pass}
 NICK {nick}
-:slackbot PRIVMSG niemeyer :VERSION
 USER {nick} {nick} gophers.irc.slack.com :User Name
 `
 

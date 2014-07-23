@@ -60,7 +60,7 @@ func test(login string) {
 	go func() {
 		time.Sleep(3 * time.Second)
 		log.Printf("Sending PING and waiting for PONG...")
-		write(conn, "PING :foo")
+		write(conn, "PING :foo\r\n")
 	}()
 
 	expect(s, func(line string) bool {
